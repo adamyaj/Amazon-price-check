@@ -117,11 +117,11 @@ def send_mail():
     server.ehlo()
     server.starttls()
     server.ehlo()
-    server.login("jaintoshi29999@gmail.com","pagalpasta")
+    server.login("id.com","password")
     subject="Price down"
     body="check the link price is now reduced: https://www.amazon.in/dp/B07XD1ZFJ9/ref=Oct_DLandingS_rdp_15e74a5b"
     msg = f"Subject:{subject}\n\n{body}"
-    server.sendmail("jaintoshi29999@gmail.com","adamyajain29@gmail.com",msg)
+    server.sendmail("id.com","fromid.com",msg)
     print("mail sent")
     server.quit()
 
